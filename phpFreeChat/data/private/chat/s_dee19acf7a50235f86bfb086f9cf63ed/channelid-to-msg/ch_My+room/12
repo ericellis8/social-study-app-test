@@ -1,0 +1,2 @@
+
+12	1329167619	ellise	send	function getNicknames($nickId)  	{ 		$serverid = isset($GLOBALS['serverid']) ? $GLOBALS['serverid'] : 0; 		require_once dirname(__FILE__)."/phpFreeChat/src/pfcinfo.class.php"; 		$info  = new pfcInfo( md5("pupchat") ); 		$listOnline = $info-&gt;getOnlineNick(NULL); 		return $listOnline; 	}
